@@ -1,0 +1,32 @@
+ .container{
+ 	background color :white; 
+ 	font-family: 'Source Sans Pro';
+ 	font-size: 18px;
+ 	color: black;
+ }
+
+  @media only screen and (max-width: 414px) {
+  .container{
+  	padding: 2.0em;
+  }
+}  
+
+
+ @media only screen and (max-width: 414px) {
+  .firstname{
+  	margin-top: 3%;
+  }
+}  
+
+@media only screen and (max-width: 414px){
+	.things{
+		margin-top: 5%;
+	}
+}
+
+@media only screen and (max-width: 414px){
+	.check{
+		margin-top: 3%;
+	}
+}
+

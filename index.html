@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Club50 Survey Form</title>
+
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+
+<div class="container bg-light text-center">
+     <img style="vertical-align: middle;" src="logo.PNG" alt="header11" height="82" width="122">
+</div><br>
+  <div class="container">
+  <form id="test-form">
+  <div class="title">
+  <div class="form-row">
+         <div class="col-md-2">
+          <select class="custom-select custom-select-md" name="Title">
+            <option selected>Title</option>
+            <option  value="Mr."> Mr.</option>
+            <option  value="Mrs."> Mrs.</option>
+            <option  value="Ms."> Ms.</option>
+          </select>
+        </div>
+        <div class="form-group col-md-5">
+          <div class="firstname"><input id="Firstname" type="text" name="Name" class="form-control" placeholder="First name"></div>
+        </div>
+        <div class="col-md-5">
+          <input type="text" class="form-control" name="Lastname" placeholder="Last name">
+        </div>
+  </div>
+   <div class="form-row">
+        <div class="col-md-6">
+           <div class="firstname"> <input id="Email" type="text" class="form-control" name="Email" placeholder="Email"></div>
+        </div>
+         <div class="col-md-4">
+             <div class="firstname"> <input id="PhoneNo" type="text" class="form-control" name="PhoneNo" placeholder="Phone No"></div>
+        </div>
+        <div class="col-md-2">
+            <div class="firstname">  <input id="YearBorn" type="text" class="form-control" name="YearBorn" placeholder="Year Born"></div>
+        </div>
+   </div>
+</div>
+<br>
+
+<div class="form-row">
+    <div class="col-lg-6">
+    <div name="FamilyMembersOver50"><p style="margin-bottom: 1%">No. of family members over 50 years</p></div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio1" value="1">
+          <label class="form-check-label" for="inlineRadio1">1</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio2" value="2">
+          <label class="form-check-label" for="inlineRadio2">2</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio2" value="3">
+          <label class="form-check-label" for="inlineRadio2">3</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio3" value="4">
+        <label class="form-check-label" for="inlineRadio3">4</label>
+      </div>
+       <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio3" value="None">
+        <label class="form-check-label" for="inlineRadio3">None</label>
+      </div>
+       <div class="form-check form-check-inline">
+        <input type="text" class="form-control form-control-sm" name="Other(Age)" placeholder="Other">
+      </div>
+    </div>
+    <div class="col-lg-6">
+    <div class="things" ><p style="margin-bottom: 1%">Things you own</p></div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="ThingsOwned" id="inlineRadio1" value="House">
+          <label class="form-check-label" for="inlineRadio1">House</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="ThingsOwned"id="inlineRadio2" value="Apartment">
+          <label class="form-check-label" for="inlineRadio2">Apartment</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="ThingsOwned" id="inlineRadio3" value="4Wheeler">
+        <label class="form-check-label" for="inlineRadio3"> 4 Wheeler </label>
+      </div>
+       <div class="form-check form-check-inline">
+        <input type="text" class="form-control form-control-sm" name="Other(ThingsOwned)" placeholder="Other">
+      </div>
+    </div>
+</div><br>
+
+
+
+<div class="form-row">
+    <div class="col-lg-6">
+      <div name="LivingOutsideVizag"><p style="margin-bottom: 1%">Family members Living Outside Vizag</p></div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="LivingOutsideVizag" id="gridRadios1" value="Spouse">
+          <label class="form-check-label" for="gridRadios1">
+            Spouse
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="LivingOutsideVizag" id="gridRadios2" value="Parents">
+          <label class="form-check-label" for="gridRadios2">
+            Parents
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="LivingOutsideVizag" id="gridRadios3" value="Children">
+          <label class="form-check-label" for="gridRadios3">
+            Children
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+        <input style="margin-top: 3%" type="text" class="form-control form-control-sm" name="Other(LivingOutside)" placeholder="Other">
+        </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="things" name="SpendTime"><p style="margin-bottom: 1%">Where do you want spend your best years of life?</p></div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios1" value="Vizag">
+          <label class="form-check-label" for="gridRadios1">
+            Vizag 
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios2" value="Andhra">
+          <label class="form-check-label" for="gridRadios2">
+            Andhra
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios3" value="Outside Andhra But India">
+          <label class="form-check-label" for="gridRadios3">
+             Outside Andhra but India
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios3" value="Abroad">
+          <label class="form-check-label" for="gridRadios3">
+             Abroad
+          </label>
+        </div>
+         <div class="form-check form-check-inline">
+        <input style="margin-top: 3%" type="text" class="form-control form-control-sm" name="Other(SpendTime)" placeholder="Other">
+        </div>
+    </div>
+</div><br>
+
+
+ <div class="form-row">
+    <div class="col-lg-6">
+    <div name="FreeTime"><p style="margin-bottom: 1%">How do you prefer to spend your free time?</p></div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="FreeTime" id="inlineRadio1" value="AtHome">
+          <label class="form-check-label" for="inlineRadio1">With Family At Home</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="FreeTime" id="inlineRadio2" value="GoingOut">
+          <label class="form-check-label" for="inlineRadio2">Going Out With Family</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="FreeTime" id="inlineRadio3" value="WithFriends">
+        <label class="form-check-label" for="inlineRadio3">With Friends</label>
+      </div>
+       <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="FreeTime" id="inlineRadio3" value="WithCollegues">
+        <label class="form-check-label" for="inlineRadio3">With Colleagues</label>
+      </div>
+       <div class="form-check form-check-inline">
+        <input type="text" class="form-control form-control-sm" name="Other(FreeTime)" placeholder="Other">
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+    <div class="things" name="AbroadTravel"><p style="margin-bottom: 1%">Abroad Travel?</p></div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="Abroad" id="inlineRadio1" value="Work">
+          <label class="form-check-label" for="inlineRadio1">Work</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="Abroad" id="inlineRadio2" value="Pleasure">
+          <label class="form-check-label" for="inlineRadio2">Pleasure</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="Abroad" id="inlineRadio3" value="Visit Family ">
+        <label class="form-check-label" for="inlineRadio3"> Visit Family </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="Abroad" id="inlineRadio3" value="Not Travelled">
+        <label class="form-check-label" for="inlineRadio3"> Not Travelled</label>
+      </div>
+       <div class="form-check form-check-inline">
+        <input type="text" class="form-control form-control-sm" name="Other(Abroad)" placeholder="Other">
+      </div>
+    </div>
+</div><br><br>
+
+
+
+ <div class="form-row">
+    <div class="col-lg-6">
+      <div name="LivingOutsideVizag"><p style="margin-bottom: 1%">MemberOf</p></div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios1" value="Waltair Club">
+          <label class="form-check-label" for="gridRadios1">
+            Waltair Club
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios2" value=" Officer's Club">
+          <label class="form-check-label" for="gridRadios2">
+            Officer's Club
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios3" value="Century Club">
+          <label class="form-check-label" for="gridRadios3">
+            Century Club
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios3" value="Golf Club">
+          <label class="form-check-label" for="gridRadios3">
+            Golf Club
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios3" value="Clubs outside Vizag">
+          <label class="form-check-label" for="gridRadios3">
+            Clubs outside Vizag
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios3" value="Apartment Association">
+          <label class="form-check-label" for="gridRadios3">
+            Apartment Association
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+        <input style="margin-top: 3%" type="text" class="form-control form-control-sm" name="Other(Clubs)" placeholder="Other">
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="things" name="SpendTime"><p style="margin-bottom: 1%">PrefferedActivity</p></div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios1" value="Movies in Theatres">
+          <label class="form-check-label" for="gridRadios1">
+           Movies in Theatres 
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios2" value="Eating Out in Restraunts">
+          <label class="form-check-label" for="gridRadios2">
+            Eating Out in Restraunts
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios3" value="Visit Temples">
+          <label class="form-check-label" for="gridRadios3">
+             Visit Temples
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios3" value="Visit Friends">
+          <label class="form-check-label" for="gridRadios3">
+             Visit Friends
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios3" value="Visit Relatives">
+          <label class="form-check-label" for="gridRadios3">
+             Visit Relatives
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios3" value="Travel Outside Vizag">
+          <label class="form-check-label" for="gridRadios3">
+            Travel Outside Vizag
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios3" value=" Stay At Home">
+          <label class="form-check-label" for="gridRadios3">
+            Stay At Home
+          </label>
+        </div>
+         <div class="form-check form-check-inline">
+        <input style="margin-top: 3%" type="text" class="form-control form-control-sm" name="Other(PrefferedActivity)" placeholder="Other">
+        </div>
+    </div>
+</div><br>
+
+
+
+<div class="form-row">
+    <div class="col-lg-6">
+      <div name="Services"><p style="margin-bottom: 1%">Services</p></div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="Services" id="gridRadios1" value="Food" >
+          <label class="form-check-label" for="gridRadios1">
+            Food
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="Services" id="gridRadios2" value=" Gym">
+          <label class="form-check-label" for="gridRadios2">
+            Gym
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="Services" id="gridRadios3" value="Bar">
+          <label class="form-check-label" for="gridRadios3">
+           Bar
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="Services" id="gridRadios3" value="Socialise">
+          <label class="form-check-label" for="gridRadios3">
+            Socialise
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="Services" id="gridRadios3" value="Movies and Events">
+          <label class="form-check-label" for="gridRadios3">
+          Movies and Events
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+        <input style="margin-top: 3%" type="text" class="form-control form-control-sm" name="Other(Services)" placeholder="Other">
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="Assistance" name="SpendTime"><p style="margin-bottom: 1%">Assistance</p></div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="Assistance" id="gridRadios1" value="Food">
+          <label class="form-check-label" for="gridRadios1">
+           Food
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="Assistance" id="gridRadios2" value="Transport">
+          <label class="form-check-label" for="gridRadios2">
+            Transport
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="Assistance" id="gridRadios3" value="Health Support">
+          <label class="form-check-label" for="gridRadios3">
+            Health Support
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="Assistance" id="gridRadios3" value="Bill Payment">
+          <label class="form-check-label" for="gridRadios3">
+            Bill Payment
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="Assistance" id="gridRadios3" value="Housekeeping">
+          <label class="form-check-label" for="gridRadios3">
+             House Keeping
+          </label>
+        </div>
+         <div class="form-check form-check-inline">
+        <input style="margin-top: 3%" type="text" class="form-control form-control-sm" name="Other(Assistance)" placeholder="Other">
+        </div>
+    </div>
+</div><br>
+
+
+
+
+</div>
+<br>
+<div class="text-center"><button id="submit-form" type="button" class="btn btn-primary btn-lg">Submit</button></div>
+<br><br>
+</form>
+</div>
+
+<script type="text/javascript">
+  var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbz3Lp6rcPi-5dhbeENfcmDAnYEA3-3vVkRGJHwg_PUhiagR4YrC/exec'
+
+var num =  new Map();
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var data ="";
+  var arr = $("#test-form").serializeArray();
+    $.each(arr,function(i,field){
+      getFieldCount(field.name,arr);
+      if(num.get(field.name)>1){
+            var cmf=combineFields(field.name, arr);
+            data+=field.name + "=" + cmf + "&";
+      }
+      else
+      {
+        data+=field.name + "=" + field.value + "&";
+      }
+    });
+   data = data.substring(0,data.length-1); 
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: data,
+    success: function (data) {
+
+        alert('ThankYou for you response');   
+         window.location.reload();
+    },
+  })
+  
+})
+
+function getFieldCount(fieldname,arr){
+  var count=0;
+  $.each(arr,function(i,field){
+  if(field.name == fieldname){
+    count+=1;
+  }
+  num.set(fieldname,count);
+  });
+}
+
+function combineFields(fieldname,arr){
+  var count =0;
+  var cmmn = "";
+    $.each(arr, function(i, field){
+    if(field.name==fieldname){
+        cmmn+= field.value+","
+        count+=1;
+        if(count == num.get(fieldname)){
+        cmmn = cmmn.substring(0,cmmn.length-1);
+        return cmmn;    
+        
+      }
+      return cmmn
+    }
+    });
+
+    return cmmn;
+}
+  
+
+</script>
+</body>
+</html>
