@@ -23,26 +23,31 @@
 <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
 
 
+
+
 </head>
 <body>
 
 <div class="container bg-light text-center">
-     <img style="vertical-align: middle;" src="logo.PNG" alt="header11" height="82" width="122">
+
+     <img style="vertical-align: middle;" src="logo.PNG" alt="header11" height="82" width="122"> 
+     <div style="text-align: center; font-family: Poppins; font-style: italic;">"The Best years of your life are after 50. Make the most of it!!!"</div>
+
 </div><br>
+
   <div class="container">
-  <form id="test-form">
+  <form id="test-form" onsubmit="return checkforblank()" >
   <div class="title">
   <div class="form-row">
          <div class="col-md-2">
           <select class="custom-select custom-select-md" name="Title">
-            <option selected>Title</option>
             <option  value="Mr."> Mr.</option>
             <option  value="Mrs."> Mrs.</option>
             <option  value="Ms."> Ms.</option>
           </select>
         </div>
-        <div class="form-group col-md-5">
-          <div class="firstname"><input id="Firstname" type="text" name="Name" class="form-control" placeholder="First name"></div>
+        <div class="form-group required col-md-5">
+          <div class="firstname"><input id="Firstname" type="text" name="Name" class="form-control" placeholder="First name" required></div>
         </div>
         <div class="col-md-5">
           <input type="text" class="form-control" name="Lastname" placeholder="Last name">
@@ -50,10 +55,10 @@
   </div>
    <div class="form-row">
         <div class="col-md-6">
-           <div class="firstname"> <input id="Email" type="text" class="form-control" name="Email" placeholder="Email"></div>
+           <div class="firstname"> <input id="Email" type="email" class="form-control" name="Email" placeholder="Email"></div>
         </div>
          <div class="col-md-4">
-             <div class="firstname"> <input id="PhoneNo" type="text" class="form-control" name="PhoneNo" placeholder="Phone No"></div>
+             <div class="firstname form-group required"> <input id="PhoneNo" type="tel:" class="form-control" name="PhoneNo" placeholder="Phone No" required></div>
         </div>
         <div class="col-md-2">
             <div class="firstname">  <input id="YearBorn" type="text" class="form-control" name="YearBorn" placeholder="Year Born"></div>
@@ -62,9 +67,64 @@
 </div>
 <br>
 
+
+
+
+
+<div class="form-row">
+    <div class="col-lg-6">
+    <div name="City Residing"><p style="margin-bottom: 1%">No. of family members over 50 years</p></div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="CityResiding" id="inlineRadio1" value="Hyderabad">
+          <label class="form-check-label" for="inlineRadio1">Hyderabad</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="CityResiding" id="inlineRadio2" value="Vizag">
+          <label class="form-check-label" for="inlineRadio2">Vizag</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="CityResiding" id="inlineRadio2" value="Vijaywada">
+          <label class="form-check-label" for="inlineRadio2">Vijaywada</label>
+      </div>
+       <div class="form-check form-check-inline">
+        <input type="text" class="form-control form-control-sm" name="CityResiding(Other)" placeholder="Other">
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+    <div class="HomeTown"><p style="margin-bottom: 1%">Home Town</p></div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="HomeTown" id="inlineRadio1" value="Hyderabad">
+          <label class="form-check-label" for="inlineRadio1">Hyderabad</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="HomeTown" id="inlineRadio2" value="Vizag">
+          <label class="form-check-label" for="inlineRadio2">Vizag</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="HomeTown" id="inlineRadio2" value="Vijaywada">
+          <label class="form-check-label" for="inlineRadio2">Vijaywada</label>
+      </div>
+       <div class="form-check form-check-inline">
+        <input type="text" class="form-control form-control-sm" name="HomeTown(Other)" placeholder="Other">
+      </div>
+    </div>
+    
+</div><br>
+
+
+
+
+
+
 <div class="form-row">
     <div class="col-lg-6">
     <div name="FamilyMembersOver50"><p style="margin-bottom: 1%">No. of family members over 50 years</p></div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio3" value="None">
+        <label class="form-check-label" for="inlineRadio3">None</label>
+      </div>
+
       <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio1" value="1">
           <label class="form-check-label" for="inlineRadio1">1</label>
@@ -82,13 +142,10 @@
         <label class="form-check-label" for="inlineRadio3">4</label>
       </div>
        <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio3" value="None">
-        <label class="form-check-label" for="inlineRadio3">None</label>
-      </div>
-       <div class="form-check form-check-inline">
         <input type="text" class="form-control form-control-sm" name="Other(Age)" placeholder="Other">
       </div>
     </div>
+
     <div class="col-lg-6">
     <div class="things" ><p style="margin-bottom: 1%">Things you own</p></div>
       <div class="form-check form-check-inline">
@@ -145,6 +202,18 @@
           </label>
         </div>
         <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios3" value="Hyderabad">
+          <label class="form-check-label" for="gridRadios3">
+             Hyderabad
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios3" value="Vijaywada">
+          <label class="form-check-label" for="gridRadios3">
+             Vijaywada
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios2" value="Andhra">
           <label class="form-check-label" for="gridRadios2">
             Andhra
@@ -162,6 +231,7 @@
              Abroad
           </label>
         </div>
+        
          <div class="form-check form-check-inline">
         <input style="margin-top: 3%" type="text" class="form-control form-control-sm" name="Other(SpendTime)" placeholder="Other">
         </div>
@@ -194,7 +264,7 @@
     </div>
 
     <div class="col-lg-6">
-    <div class="things" name="AbroadTravel"><p style="margin-bottom: 1%">Abroad Travel?</p></div>
+    <div class="things" name="AbroadTravel"><p style="margin-bottom: 1%">Purpose of your travel abroad?</p></div>
       <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" name="Abroad" id="inlineRadio1" value="Work">
           <label class="form-check-label" for="inlineRadio1">Work</label>
@@ -215,13 +285,13 @@
         <input type="text" class="form-control form-control-sm" name="Other(Abroad)" placeholder="Other">
       </div>
     </div>
-</div><br><br>
+</div><br>
 
 
 
  <div class="form-row">
     <div class="col-lg-6">
-      <div name="LivingOutsideVizag"><p style="margin-bottom: 1%">MemberOf</p></div>
+      <div class="LivingOutsideVizag"><p style="margin-bottom: 1%">Are you a Member of any club?</p></div>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios1" value="Waltair Club">
           <label class="form-check-label" for="gridRadios1">
@@ -259,12 +329,18 @@
           </label>
         </div>
         <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios3" value="None">
+          <label class="form-check-label" for="gridRadios3">
+            None
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
         <input style="margin-top: 3%" type="text" class="form-control form-control-sm" name="Other(Clubs)" placeholder="Other">
         </div>
     </div>
 
     <div class="col-lg-6">
-      <div class="things" name="SpendTime"><p style="margin-bottom: 1%">PrefferedActivity</p></div>
+      <div class="things" name="SpendTime"><p style="margin-bottom: 1%">Preffered Activities</p></div>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios1" value="Movies in Theatres">
           <label class="form-check-label" for="gridRadios1">
@@ -317,7 +393,7 @@
 
 <div class="form-row">
     <div class="col-lg-6">
-      <div name="Services"><p style="margin-bottom: 1%">Services</p></div>
+      <div name="Services"><p style="margin-bottom: 1%">Services you are intrested in?</p></div>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" name="Services" id="gridRadios1" value="Food" >
           <label class="form-check-label" for="gridRadios1">
@@ -354,7 +430,7 @@
     </div>
 
     <div class="col-lg-6">
-      <div class="Assistance" name="SpendTime"><p style="margin-bottom: 1%">Assistance</p></div>
+      <div class="Assistance" name="SpendTime"><p style="margin-bottom: 1%">What Kind of assistance would you like?</p></div>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" name="Assistance" id="gridRadios1" value="Food">
           <label class="form-check-label" for="gridRadios1">
@@ -396,7 +472,7 @@
 
 </div>
 <br>
-<div class="text-center"><button id="submit-form" type="button" class="btn btn-primary btn-lg">Submit</button></div>
+<div class="text-center"><button id="submit-form" class="btn btn-primary btn-lg">Submit</button></div>
 <br><br>
 </form>
 </div>
@@ -408,6 +484,10 @@
 var num =  new Map();
 
 $('#submit-form').on('click', function(e) {
+  if (document.getElementById('Email').value=="" || document.getElementById('PhoneNo').value==""){
+    alert('Please enter an email/PhoneNo');
+    return false
+  }
   e.preventDefault();
   var data ="";
   var arr = $("#test-form").serializeArray();
@@ -430,7 +510,7 @@ $('#submit-form').on('click', function(e) {
     data: data,
     success: function (data) {
 
-        alert('ThankYou for you response');   
+        alert('ThankYou for your time! We will reach out to you shortly. Share the link with your friends whom you think will also become intrested in becoming a Club50 Member');   
          window.location.reload();
     },
   })
@@ -465,8 +545,16 @@ function combineFields(fieldname,arr){
 
     return cmmn;
 }
-  
 
+
+</script>
+<script type="text/javascript">
+  function checkforblank(){
+  if (document.getElementById('Email').value=="" || document.getElementById('PhoneNo').value==""){
+    alert('Please enter an email/PhoneNo');
+    return false
+  }
+}
 </script>
 </body>
 </html>
