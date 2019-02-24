@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 <head>
 	<title>Club50 Survey Form</title>
 
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta charset="UTF-8">
+
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
@@ -17,16 +20,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 
+<!--Poopins Google Font-->
+
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
-<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
-<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
-
-
-
-
 </head>
+
+
 <body>
+
+<!--===================================HEADER/LOGO/BRANDING INFO==================================-->
 
 <div class="container bg-light text-center">
 
@@ -35,8 +38,12 @@
 
 </div><br>
 
+
+
+<!--============================TITLE/NAME/EMAIL/PHONE/YEAR BORN FIELDS==============================-->
+
   <div class="container">
-  <form id="test-form" onsubmit="return checkforblank()" >
+  <form id="test-form">
   <div class="title">
   <div class="form-row">
          <div class="col-md-2">
@@ -55,10 +62,10 @@
   </div>
    <div class="form-row">
         <div class="col-md-6">
-           <div class="firstname"> <input id="Email" type="email" class="form-control" name="Email" placeholder="Email"></div>
+           <div class="firstname"> <input id="Email"  class="form-control" name="Email" placeholder="Email"></div>
         </div>
          <div class="col-md-4">
-             <div class="firstname form-group required"> <input id="PhoneNo" type="tel:" class="form-control" name="PhoneNo" placeholder="Phone No" required></div>
+             <div class="firstname form-group required"> <input id="PhoneNo"  class="form-control" name="PhoneNo" placeholder="Phone No"></div>
         </div>
         <div class="col-md-2">
             <div class="firstname">  <input id="YearBorn" type="text" class="form-control" name="YearBorn" placeholder="Year Born"></div>
@@ -69,11 +76,12 @@
 
 
 
+<!--===================================CITY RESIDING/ HOME TOWN=======================================-->
 
 
 <div class="form-row">
     <div class="col-lg-6">
-    <div name="City Residing"><p style="margin-bottom: 1%">City Residing</p></div>
+    <div class="City Residing"><p style="margin-bottom: 1%">City Residing</p></div>
       <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="CityResiding" id="inlineRadio1" value="Hyderabad">
           <label class="form-check-label" for="inlineRadio1">Hyderabad</label>
@@ -83,8 +91,8 @@
           <label class="form-check-label" for="inlineRadio2">Vizag</label>
       </div>
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="CityResiding" id="inlineRadio2" value="Vijaywada">
-          <label class="form-check-label" for="inlineRadio2">Vijayawada</label>
+          <input class="form-check-input" type="radio" name="CityResiding" id="inlineRadio3" value="Vijaywada">
+          <label class="form-check-label" for="inlineRadio3">Vijayawada</label>
       </div>
        <div class="form-check form-check-inline">
         <input type="text" class="form-control form-control-sm" name="CityResiding(Other)" placeholder="Other">
@@ -94,16 +102,16 @@
     <div class="col-lg-6">
     <div class="HomeTown"><p style="margin-bottom: 1%">Home Town</p></div>
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="HomeTown" id="inlineRadio1" value="Hyderabad">
-          <label class="form-check-label" for="inlineRadio1">Hyderabad</label>
+          <input class="form-check-input" type="radio" name="HomeTown"  value="Hyderabad">
+          <label class="form-check-label">Hyderabad</label>
       </div>
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="HomeTown" id="inlineRadio2" value="Vizag">
-          <label class="form-check-label" for="inlineRadio2">Vizag</label>
+          <input class="form-check-input" type="radio" name="HomeTown"  value="Vizag">
+          <label class="form-check-label">Vizag</label>
       </div>
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="HomeTown" id="inlineRadio2" value="Vijaywada">
-          <label class="form-check-label" for="inlineRadio2">Vijayawada</label>
+          <input class="form-check-input" type="radio" name="HomeTown"  value="Vijaywada">
+          <label class="form-check-label">Vijayawada</label>
       </div>
        <div class="form-check form-check-inline">
         <input type="text" class="form-control form-control-sm" name="HomeTown(Other)" placeholder="Other">
@@ -114,32 +122,32 @@
 
 
 
-
+<!--================================FAMILY INFO/THINGS YOU OWN========================================-->
 
 
 <div class="form-row">
     <div class="col-lg-6">
-    <div name="FamilyMembersOver50"><p style="margin-bottom: 1%">No. of family members over 50 years?</p></div>
+    <div class="FamilyMembersOver50"><p style="margin-bottom: 1%">No. of family members over 50 years?</p></div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio3" value="None">
-        <label class="form-check-label" for="inlineRadio3">None</label>
+        <input class="form-check-input" type="radio" name="FamilyOver50"  value="None">
+        <label class="form-check-label" >None</label>
       </div>
 
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio1" value="1">
-          <label class="form-check-label" for="inlineRadio1">1</label>
+          <input class="form-check-input" type="radio" name="FamilyOver50"  value="1">
+          <label class="form-check-label" >1</label>
       </div>
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio2" value="2">
-          <label class="form-check-label" for="inlineRadio2">2</label>
+          <input class="form-check-input" type="radio" name="FamilyOver50"  value="2">
+          <label class="form-check-label">2</label>
       </div>
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio2" value="3">
-          <label class="form-check-label" for="inlineRadio2">3</label>
+          <input class="form-check-input" type="radio" name="FamilyOver50"  value="3">
+          <label class="form-check-label">3</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="FamilyOver50" id="inlineRadio3" value="4">
-        <label class="form-check-label" for="inlineRadio3">4</label>
+        <input class="form-check-input" type="radio" name="FamilyOver50"  value="4">
+        <label class="form-check-label" >4</label>
       </div>
        <div class="form-check form-check-inline">
         <input type="text" class="form-control form-control-sm" name="Other(Age)" placeholder="Other">
@@ -149,45 +157,47 @@
     <div class="col-lg-6">
     <div class="things" ><p style="margin-bottom: 1%">Things you own?</p></div>
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="ThingsOwned" id="inlineRadio1" value="House">
-          <label class="form-check-label" for="inlineRadio1">House</label>
+          <input class="form-check-input" type="checkbox" name="ThingsOwned"  value="House">
+          <label class="form-check-label">House</label>
       </div>
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="ThingsOwned"id="inlineRadio2" value="Apartment">
-          <label class="form-check-label" for="inlineRadio2">Apartment</label>
+          <input class="form-check-input" type="checkbox" name="ThingsOwned"  value="Apartment">
+          <label class="form-check-label" >Apartment</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="ThingsOwned" id="inlineRadio3" value="4Wheeler">
-        <label class="form-check-label" for="inlineRadio3"> 4 Wheeler </label>
+        <input class="form-check-input" type="checkbox" name="ThingsOwned"  value="4Wheeler">
+        <label class="form-check-label"> 4 Wheeler </label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="ThingsOwned" id="inlineRadio3" value="all">
-        <label class="form-check-label" for="inlineRadio3"> All </label>
+        <input class="form-check-input" type="checkbox" name="ThingsOwned"  value="all">
+        <label class="form-check-label" > All </label>
       </div>
        
     </div>
 </div><br>
 
 
+<!--==================================FAMILY LIVING INFO/SPEND TIME=================================-->
+
 
 <div class="form-row">
     <div class="col-lg-6">
-      <div name="LivingOutsideVizag"><p style="margin-bottom: 1%">Family members Living Outside Vizag?</p></div>
+      <div class="LivingOutsideVizag"><p style="margin-bottom: 1%">Family members Living Outside Vizag?</p></div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="LivingOutsideVizag" id="gridRadios1" value="Spouse">
-          <label class="form-check-label" for="gridRadios1">
+          <input class="form-check-input" type="checkbox" name="LivingOutsideVizag"  value="Spouse">
+          <label class="form-check-label" >
             Spouse
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="LivingOutsideVizag" id="gridRadios2" value="Parents">
-          <label class="form-check-label" for="gridRadios2">
+          <input class="form-check-input" type="checkbox" name="LivingOutsideVizag"  value="Parents">
+          <label class="form-check-label" >
             Parents
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="LivingOutsideVizag" id="gridRadios3" value="Children">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="LivingOutsideVizag"  value="Children">
+          <label class="form-check-label">
             Children
           </label>
         </div>
@@ -196,40 +206,40 @@
         </div>
     </div>
     <div class="col-lg-6">
-      <div class="things" name="SpendTime"><p style="margin-bottom: 1%">Where do you want spend your best years of life?</p></div>
+      <div class="SpendTime"><p style="margin-bottom: 1%">Where do you want spend your best years of life?</p></div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios1" value="Vizag">
-          <label class="form-check-label" for="gridRadios1">
+          <input class="form-check-input" type="checkbox" name="SpendTime"  value="Vizag">
+          <label class="form-check-label">
             Vizag 
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios3" value="Hyderabad">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="SpendTime"  value="Hyderabad">
+          <label class="form-check-label">
              Hyderabad
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios3" value="Vijaywada">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="SpendTime"  value="Vijaywada">
+          <label class="form-check-label" >
              Vijaywada
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios2" value="Andhra">
-          <label class="form-check-label" for="gridRadios2">
+          <input class="form-check-input" type="checkbox" name="SpendTime"  value="Andhra">
+          <label class="form-check-label" >
             Andhra
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios3" value="Outside Andhra But India">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="SpendTime" value="Outside Andhra But India">
+          <label class="form-check-label" >
              Outside Andhra but India
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="SpendTime" id="gridRadios3" value="Abroad">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="SpendTime"  value="Abroad">
+          <label class="form-check-label" >
              Abroad
           </label>
         </div>
@@ -241,24 +251,27 @@
 </div><br>
 
 
+<!--=================================FREETIME/ABROAD TRAVEL=========================================-->
+
+
  <div class="form-row">
     <div class="col-lg-6">
-    <div name="FreeTime"><p style="margin-bottom: 1%">How do you prefer to spend your free time?</p></div>
+    <div class="FreeTime"><p style="margin-bottom: 1%">How do you prefer to spend your free time?</p></div>
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="FreeTime" id="inlineRadio1" value="AtHome">
-          <label class="form-check-label" for="inlineRadio1">With Family At Home</label>
+          <input class="form-check-input" type="checkbox" name="FreeTime"  value="AtHome">
+          <label class="form-check-label" >With Family At Home</label>
       </div>
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="FreeTime" id="inlineRadio2" value="GoingOut">
-          <label class="form-check-label" for="inlineRadio2">Going Out With Family</label>
+          <input class="form-check-input" type="checkbox" name="FreeTime" value="GoingOut">
+          <label class="form-check-label" >Going Out With Family</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="FreeTime" id="inlineRadio3" value="WithFriends">
-        <label class="form-check-label" for="inlineRadio3">With Friends</label>
+        <input class="form-check-input" type="checkbox" name="FreeTime"  value="WithFriends">
+        <label class="form-check-label" >With Friends</label>
       </div>
        <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="FreeTime" id="inlineRadio3" value="WithCollegues">
-        <label class="form-check-label" for="inlineRadio3">With Colleagues</label>
+        <input class="form-check-input" type="checkbox" name="FreeTime"  value="WithCollegues">
+        <label class="form-check-label">With Colleagues</label>
       </div>
        <div class="form-check form-check-inline">
         <input type="text" class="form-control form-control-sm" name="Other(FreeTime)" placeholder="Other">
@@ -266,22 +279,22 @@
     </div>
 
     <div class="col-lg-6">
-    <div class="things" name="AbroadTravel"><p style="margin-bottom: 1%">Purpose of your travel abroad?</p></div>
+    <div class="AbroadTravel"><p style="margin-bottom: 1%">Purpose of your travel abroad?</p></div>
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="Abroad" id="inlineRadio1" value="Work">
-          <label class="form-check-label" for="inlineRadio1">Work</label>
+          <input class="form-check-input" type="checkbox" name="Abroad"  value="Work">
+          <label class="form-check-label" >Work</label>
       </div>
       <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="Abroad" id="inlineRadio2" value="Pleasure">
-          <label class="form-check-label" for="inlineRadio2">Pleasure</label>
+          <input class="form-check-input" type="checkbox" name="Abroad"  value="Pleasure">
+          <label class="form-check-label" >Pleasure</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="Abroad" id="inlineRadio3" value="Visit Family ">
-        <label class="form-check-label" for="inlineRadio3"> Visit Family </label>
+        <input class="form-check-input" type="checkbox" name="Abroad"  value="Visit Family ">
+        <label class="form-check-label"> Visit Family </label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" name="Abroad" id="inlineRadio3" value="Not Travelled">
-        <label class="form-check-label" for="inlineRadio3"> Not Travelled</label>
+        <input class="form-check-input" type="checkbox" name="Abroad"  value="Not Travelled">
+        <label class="form-check-label"> Not Travelled</label>
       </div>
        <div class="form-check form-check-inline">
         <input type="text" class="form-control form-control-sm" name="Other(Abroad)" placeholder="Other">
@@ -290,49 +303,50 @@
 </div><br>
 
 
+<!--=============================CLUB/PREFERED ACTIVITIES===================================-->
 
  <div class="form-row">
     <div class="col-lg-6">
       <div class="LivingOutsideVizag"><p style="margin-bottom: 1%">Are you a Member of any club?</p></div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios1" value="Waltair Club">
-          <label class="form-check-label" for="gridRadios1">
+          <input class="form-check-input" type="checkbox" name="MemberOf"  value="Waltair Club">
+          <label class="form-check-label">
             Waltair Club
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios2" value=" Officer's Club">
-          <label class="form-check-label" for="gridRadios2">
+          <input class="form-check-input" type="checkbox" name="MemberOf"  value=" Officer's Club">
+          <label class="form-check-label" >
             Officer's Club
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios3" value="Century Club">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="MemberOf"  value="Century Club">
+          <label class="form-check-label">
             Century Club
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios3" value="Golf Club">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="MemberOf"  value="Golf Club">
+          <label class="form-check-label" >
             Golf Club
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios3" value="Clubs outside Vizag">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="MemberOf"  value="Clubs outside Vizag">
+          <label class="form-check-label" >
             Clubs outside Vizag
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios3" value="Apartment Association">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="MemberOf"  value="Apartment Association">
+          <label class="form-check-label" >
             Apartment Association
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="MemberOf" id="gridRadios3" value="None">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="MemberOf"  value="None">
+          <label class="form-check-label">
             None
           </label>
         </div>
@@ -342,46 +356,46 @@
     </div>
 
     <div class="col-lg-6">
-      <div class="things" name="SpendTime"><p style="margin-bottom: 1%">Preffered Activities</p></div>
+      <div class="PrefferedActivity"><p style="margin-bottom: 1%">Preffered Activities</p></div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios1" value="Movies in Theatres">
-          <label class="form-check-label" for="gridRadios1">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity"  value="Movies in Theatres">
+          <label class="form-check-label" >
            Movies in Theatres 
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios2" value="Eating Out in Restraunts">
-          <label class="form-check-label" for="gridRadios2">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity"  value="Eating Out in Restraunts">
+          <label class="form-check-label">
             Eating Out in Restaurants
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios3" value="Visit Temples">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity" value="Visit Temples">
+          <label class="form-check-label">
              Visit Temples
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios3" value="Visit Friends">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity"  value="Visit Friends">
+          <label class="form-check-label">
              Visit Friends
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios3" value="Visit Relatives">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity"  value="Visit Relatives">
+          <label class="form-check-label">
              Visit Relatives
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios3" value="Travel Outside Vizag">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity"  value="Travel Outside Vizag">
+          <label class="form-check-label" >
             Travel Outside Vizag
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="PrefferedActivity" id="gridRadios3" value=" Stay At Home">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="PrefferedActivity"  value=" Stay At Home">
+          <label class="form-check-label">
             Stay At Home
           </label>
         </div>
@@ -392,37 +406,39 @@
 </div><br>
 
 
+<!--=========================SERVICES/ASSISTANCE====================================================-->
+
 
 <div class="form-row">
     <div class="col-lg-6">
-      <div name="Services"><p style="margin-bottom: 1%">Services you are intrested in?</p></div>
+      <div class="Services"><p style="margin-bottom: 1%">Services you are intrested in?</p></div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="Services" id="gridRadios1" value="Food" >
-          <label class="form-check-label" for="gridRadios1">
+          <input class="form-check-input" type="checkbox" name="Services"  value="Food" >
+          <label class="form-check-label" >
             Food
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="Services" id="gridRadios2" value=" Gym">
-          <label class="form-check-label" for="gridRadios2">
+          <input class="form-check-input" type="checkbox" name="Services"  value=" Gym">
+          <label class="form-check-label">
             Gym
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="Services" id="gridRadios3" value="Bar">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="Services"  value="Bar">
+          <label class="form-check-label">
            Bar
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="Services" id="gridRadios3" value="Socialise">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="Services" value="Socialise">
+          <label class="form-check-label">
             Socialise
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="Services" id="gridRadios3" value="Movies and Events">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="Services"  value="Movies and Events">
+          <label class="form-check-label">
           Movies and Events
           </label>
         </div>
@@ -432,34 +448,34 @@
     </div>
 
     <div class="col-lg-6">
-      <div class="Assistance" name="SpendTime"><p style="margin-bottom: 1%">What Kind of assistance would you like?</p></div>
+      <div class="Assistance"><p style="margin-bottom: 1%">What Kind of assistance would you like?</p></div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="Assistance" id="gridRadios1" value="Food">
-          <label class="form-check-label" for="gridRadios1">
+          <input class="form-check-input" type="checkbox" name="Assistance"  value="Food">
+          <label class="form-check-label">
            Food
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="Assistance" id="gridRadios2" value="Transport">
-          <label class="form-check-label" for="gridRadios2">
+          <input class="form-check-input" type="checkbox" name="Assistance"  value="Transport">
+          <label class="form-check-label">
             Transport
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="Assistance" id="gridRadios3" value="Health Support">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="Assistance"  value="Health Support">
+          <label class="form-check-label" >
             Health Support
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="Assistance" id="gridRadios3" value="Bill Payment">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="Assistance"  value="Bill Payment">
+          <label class="form-check-label">
             Bill Payment
           </label>
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox" name="Assistance" id="gridRadios3" value="Housekeeping">
-          <label class="form-check-label" for="gridRadios3">
+          <input class="form-check-input" type="checkbox" name="Assistance"  value="Housekeeping">
+          <label class="form-check-label" >
              House Keeping
           </label>
         </div>
@@ -469,17 +485,26 @@
     </div>
 </div><br>
 
-
-
-
-</div>
 <br>
+
+
+<!--==================SUBMIT ====================-->
+
 <div class="text-center"><button id="submit-form" class="btn btn-primary btn-lg">Submit</button></div>
 <br><br>
+
+
+
+
 </form>
 </div>
 
-<script type="text/javascript">
+
+<!--===========================Google Sheets API Call========================================-->
+
+<script>
+/*Google Sheets API call*/
+
   var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/AKfycbz3Lp6rcPi-5dhbeENfcmDAnYEA3-3vVkRGJHwg_PUhiagR4YrC/exec'
 
@@ -550,7 +575,9 @@ function combineFields(fieldname,arr){
 
 
 </script>
-<script type="text/javascript">
+
+<!--==================================HTML5 INPUT VALIDATION==============================-->
+<script>
   function checkforblank(){
   if (document.getElementById('Email').value=="" || document.getElementById('PhoneNo').value==""){
     alert('Please enter a valid Email or PhoneNo');
